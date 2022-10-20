@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<!-- head -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>MSc Finance & Big Data - Data visualization 2021</title>
+
+  <!-- bulma and font awesome -->
+  <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/cosmo/bulmaswatch.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" crossorigin="anonymous">
+  <style>
+      .hero-body, .hero-foot{
+          background-color: #000000;
+      }
+      .section {
+          background-color: #E0E0E0;
+      }
+      .bloc {
+          background-color: #EEEEEE;
+          border: solid 1px;
+          border-color: #000000;
+      }
+
+  </style>
+</head>
+
+<!-- body -->
+<body>
+
+  <!-- header -->
+  <section class="hero is-info is-bold">
+    <!-- todo: change assignment and name -->
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+            <strong> Covid-19 vaccination of the French population as of February 21, 2021 </strong>
+        </h1>
+        <h2 class="subtitle">
+          Myriam Ouanounou
+        </h2>
+      </div>
+    </div>
+
+    <!-- change navigation if needed -->
+    <div class="hero-foot">
+      <div class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+
+          <div class="navbar-brand-left">
+            <a class="navbar-item" href="#top">
+              <span class="icon">
+                <i class="fas fa-home"></i>
+              </span>
+              <span> Home</span>
+            </a>
+          </div>
+
+          <div id="main-navbar" class="navbar-menu-left">
+            <a class="navbar-item" href="#viz1">
+              <span class="icon">
+                <i class="fas fa-syringe"></i>
+              </span>
+              <span> First dosis</span>
+            </a>
+          </div>
+            
+           <div id="main-navbar" class="navbar-menu-left">
+            <a class="navbar-item" href="#viz2">
+              <span class="icon">
+                <i class="fas fa-syringe"></i>
+              </span>
+              <span class="icon">
+                <i class="fas fa-syringe"></i>
+              </span>
+              <span> Second dosis</span>
+            </a>
+          </div>
+            
+           <div id="main-navbar" class="navbar-menu-left">
+            <a class="navbar-item" href="#interpretation">
+              <span class="icon">
+                <i class="fas fa-glasses"></i>
+              </span>
+              <span> Interpretation</span>
+            </a>
+          </div>
+            
+           <div id="main-navbar" class="navbar-menu-left">
+            <a class="navbar-item" href="#discussion">
+              <span class="icon">
+                <i class="far fa-comment-dots"></i>
+              </span>
+              <span> Discussion</span>
+            </a>
+          </div>
+            
+           <div id="main-navbar" class="navbar-menu-left">
+            <a class="navbar-item" href="#sources">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span> Sources</span>
+            </a>
+          </div>
+
+          <div class="navbar-end">
+            <a class="navbar-item" href="#about">
+              <span class="icon">
+                <i class="fas fa-info-circle"></i>
+              </span>
+              <span>About</span>
+            </a>
+          </div>
+
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container content">
+      <!-- modify if necessary (move visualizations in separate pages) -->
+       <h2 id="viz1"><i class="fas fa-syringe"></i> First dosis</h2>
+    <div class=bloc>
+      <img src='metropole1.png'>
+      <img src='overseas1.png'>
+        </div>
+        <p> </p>
+    <div class=bloc>
+      <img src='%metropole1.png'>
+      <img src='%overseas1.png'>
+        </div>
+  <section class="section">
+    <div class="container content">
+      <!-- modify if necessary (move visualizations in separate pages) -->
+      <h2 id="viz2"><i class="fas fa-syringe"></i><i class="fas fa-syringe"></i> Second dosis</h2>
+    <div class=bloc>
+      <img src='metropole2.png' >
+      <img src='overseas2.png'>
+        </div>
+        <p> </p>
+    <div class=bloc>
+      <img src='%metropole2.png'>
+      <img src='%overseas2.png'>
+        </div>
+
+      <h2 id='interpretation'><i class="fas fa-glasses"></i> Interpretation</h2>
+
+      <p>
+        This is a reprensentation of the French vaccination campain plotted as heatmaps on French geographic regions. The <strong>repartition</strong> maps present data expressed in number of people. The <strong>proportion</strong> maps present data expressed in percentage of the population of each age class and region. Please note that for readability purposes the heatmap scale of the proportion maps was adjusted as follows : 
+<p> • multiplied by 15 for 0-39 years old <p> • multiplied by 5 for 40-74 years old </p>
+
+      <h2 id="discussion"><i class="far fa-comment-dots"></i> Discussion</h2>
+        <h4>• Key findings </h4>
+        <p> <u> - repartition / proportion analysis </u>
+      <p>The repartition maps show, for each age class, which region has consumed the most doses while the proportion maps show, for each age class, which region is the most vaccinated. Here, the region Île-de-France clearly required the most doses. Yet, Bourgogne-Franche-Comté is the most vaccinated region. 
+        <p> <u> - vertical analysis </u>
+        <p> The comparison between the first dosis maps and the second dosis maps shows whether the doses were used for both the first and second injections or whether they were mostly used for the first injections only. As a result, Nouvelle-Aquitaine, among others, appears to have used doses for both injections whereas in Mayotte, almost all available doses where dedicated to first injections. Consequently, more people have received the vaccine but very few are fully vaccinated. 
+        <p> <u> - horizontal analysis </u>
+        <p> The comparison between the different age classes shows that in its vaccination campaign, France is still at the stage of vaccinating the elderly. This is consistent with what was announced : "The vaccination was first opened via the messenger-RNA vaccines from Pfizer/BioNTech and Moderna to the Ehpad patients, then to the fragile or over 50 years old health care professionals and to the 5 million people over 75 years old. It was newly accelerated with the arrival of AstraZeneca's vaccine that has an easier logistic deployment but that is not recommended at this stage for people over 65 years old because of too little data. This product is prioritarily administrated to health care professionals and people between 50 and 64 years old who suffer comorbidity." [translated from <i>Les Échos</i>]
+        <p> <u> - single map analysis </u>
+        <p> The overall aspect of each proportion map shows that the vaccination is rather homogenous in the metropole, even though some regions have required more doses to get to this stage, as shown in the repartition maps. However, it is not homogenous between the metropole and the overseas regions, which are all behind in the campaign except for Guiana.
+        <h4>• Challenges</h4>
+        <p> In the vaccination data, the information about the age classes below 18 years old were not presented. Therefore they had to be extracted from the "all ages" category.
+        <p> The vaccination data was to be enriched with data from L'INSEE regarding the regions and population per region and age class. 
+        <p> When representing the data on the French map, a first trial with the library shapefile gave an unsatisfying result (see below). Given that the problem is inherent to the library, this approch was abandoned and replaced with using geopandas, which brought the advantage of objects compatibility.
+           
+     </p>
+        <img src='maperror.png' width = 128 height=128>
+
+      <h2 id ='sources'><i class="fas fa-database"></i> Sources</h2>
+
+      <p>
+            From data.gouv.fr : 
+     <a href="https://www.data.gouv.fr/fr/datasets/donnees-relatives-aux-personnes-vaccinees-contre-la-covid-19-1/#_">
+                <i class="fas fa-syringe"></i>
+                <span>Vaccination data</span>
+              </a>   
+        &bullet;
+   
+        <a href="https://www.data.gouv.fr/fr/datasets/contours-des-regions-francaises-sur-openstreetmap/">
+                <i class="fas fa-globe-europe"></i>
+                <span>Map data</span>
+              </a>   
+        <p>
+            From www.insee.fr : 
+        <a href="https://www.insee.fr/fr/information/4316069">
+                <i class="fas fa-map-marked-alt"></i>
+                <span>Region data</span>
+              </a>   
+            &bullet;
+            
+        <a href="https://www.insee.fr/fr/statistiques/1893198">
+                <i class="fas fa-users"></i>
+                <span>Population data</span>
+              </a>   
+        <p>
+            From <i>Les Échos</i> : 
+        <a href="https://www.lesechos.fr/politique-societe/societe/covid-la-campagne-de-vaccination-en-france-1266158">
+                <i class="far fa-newspaper"></i>
+                <span>Campaign data</span>
+              </a>
+        <p>
+            From <i>Towards Data Science</i> : 
+        <a href="https://towardsdatascience.com/mapping-with-matplotlib-pandas-geopandas-and-basemap-in-python-d11b57ab5dac">
+                <i class="fas fa-puzzle-piece"></i>
+                <span>Mapping with Geopandas</span>
+              </a>
+        
+      </p>
+    </div>
+  </section>
+
+  <hr class="container">
+
+  <!-- about section -->
+  <!-- fill in, or link to a personal web page  -->
+  <section class="section">
+    <div class="container content">
+      <h2 id="about">
+        About Me
+      </h2>
+
+      <div class="media">
+        <div class="media-left">
+          <p class="image is-128x128">
+            <!-- replace with your profile image -->
+            <img src="photo.png">
+          </p>
+        </div>
+
+        <div class="media-content">
+            <p>
+              <!-- replace with your information -->
+              <strong>Myriam Ouanounou</strong>
+              <br/>
+              MS student in Finance & Big Data at Neoma Business School, currently preparing CFA Level I for May 2021 session and working as a Data Scientist apprentice at BNP Paribas ; with one study abroad experience in Peru and several summer job experiences.
+              <br/>
+              &bullet;
+              <a href="https://www.linkedin.com/in/myriam-ouanounou-8205a3126/">
+                <span class="fab fa-linkedin"></span>
+                <span>LinkedIn</span>
+              </a>
+              &bullet;
+            </p>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <small>
+        <a href="#top">
+          <span class="fas fa-arrow-up"></span>
+          <span>Back to Top</span>
+        </a>
+        <br/>
+        <a href="https://www.neoma-bs.fr/formations/masteres-specialises-masters-of-science-temps-partiel/msc-in-finance-and-big-data/presentation-du-programme"><i class="fas fa-graduation-cap"></i> MSc Finance & Big Data / Data visualization</a>
+        &bullet;
+        <a href="https://www.neoma-bs.fr/"><i class="fas fa-school"></i> Neoma Business School</a>
+      </small>
+    </div>
+  </footer>
+
+</body>
+</html>
+
